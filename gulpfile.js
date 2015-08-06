@@ -13,20 +13,10 @@ require('laravel-elixir-livereload');
  |
  */
 
-elixir(function (mix) {
-    mix.rubySass([
-        "main.scss"
-    ],"public/css/style.css");
-});
-
-elixir(function (mix) {
-    mix.scripts([
-        "main.js"
-    ], "public/js/main.js");
-});
-
+// sprites
 elixir(function (mix) {
     mix.spritesmith(null, {
+        imgOutput: 'public/img',
         cssOutput: 'resources/assets/sass/vendor',
         cssName: '_sprite.scss',
         cssOpts: {
@@ -35,5 +25,23 @@ elixir(function (mix) {
             }
         }
     });
+});
+
+// sass
+elixir(function (mix) {
+    mix.rubySass([
+        "main.scss"
+    ],"public/css/style.css");
+});
+
+// js
+elixir(function (mix) {
+    mix.scripts([
+        "main.js"
+    ], "public/js/main.js");
+});
+
+// livereload
+elixir(function (mix) {
     mix.livereload();
 });
