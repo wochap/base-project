@@ -1,8 +1,12 @@
 /vendor
 /node_modules
+/public/css
+/public/img
+/public/js
+/public/fonts
+/resources/assets/img/sprites/*.db
+/resources/assets/img/images/*.db
 Homestead.yaml
 .env
 .sass-cache
 npm-debug.log
-/public/img/*.db
-/resources/assets/img/sprites/*.db
