@@ -2,6 +2,9 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-spritesmith');
 require('laravel-elixir-livereload');
 
+// ELixir laravel 4
+// elixir.config.assetsDir = 'assets/';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -13,11 +16,11 @@ require('laravel-elixir-livereload');
  |
  */
 
-// sprites
+/* [GENERATE] sprites */
 elixir(function (mix) {
     mix.spritesmith(null, {
         imgOutput: 'public/img',
-        cssOutput: 'resources/assets/sass/vendor',
+        cssOutput: 'resources/assets/sass/front-page/vendor',
         cssName: '_sprite.scss',
         cssOpts: {
             cssSelector: function (item) {
@@ -27,21 +30,41 @@ elixir(function (mix) {
     });
 });
 
-// sass
+/* [COPY] images and fonts to public folder */
+elixir(function(mix) {
+    // images
+    mix.copy("resources/assets/img/images", "public/img")
+    // fonts
+    .copy("resources/assets/fonts", "public/fonts");
+});
+
+/* [COMPILE] sass files */
 elixir(function (mix) {
+    // front page
     mix.rubySass([
-        "main.scss"
-    ],"public/css/style.css");
+        "front-page.scss"
+    ],"public/css/front/main.css", {container: 'front'})
+
+    // back page
+    .rubySass([
+        "back-page.scss"
+        ],"public/css/back/main.css", {container: 'back'});
 });
 
-// js
+/* [COMPILE] js files */
 elixir(function (mix) {
+    // front page
     mix.scripts([
-        "main.js"
-    ], "public/js/main.js");
+        "front-page/main.js"
+    ], "public/js/front/main.js")
+
+    // back page
+    .scripts([
+        "back-page/main.js"
+    ], "public/js/back/main.js");
 });
 
-// livereload
+/* [RELOAD] livereload */
 elixir(function (mix) {
-    mix.livereload();
+    mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*' ]);
 });
