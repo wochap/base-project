@@ -42,12 +42,12 @@ elixir(function(mix) {
 elixir(function (mix) {
     // front page
     mix.rubySass([
-        "front-page.scss"
+        "front-page/main.scss"
     ],"public/css/front/main.css", {container: 'front'})
 
     // back page
     .rubySass([
-        "back-page.scss"
+        "back-page/main.scss"
         ],"public/css/back/main.css", {container: 'back'});
 });
 
