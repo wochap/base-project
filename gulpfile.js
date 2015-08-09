@@ -66,5 +66,5 @@ elixir(function (mix) {
 
 /* [RELOAD] livereload */
 elixir(function (mix) {
-    mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*' ]);
+    mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*', 'resources/**/*' ]);
 });
