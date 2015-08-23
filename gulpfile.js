@@ -19,14 +19,15 @@ require('laravel-elixir-livereload');
 /* [GENERATE] sprites */
 elixir(function (mix) {
     mix.spritesmith(null, {
-        imgOutput: 'public/img',
-        cssOutput: 'resources/assets/sass/front-page/vendor',
         cssName: '_sprite.scss',
         cssOpts: {
             cssSelector: function (item) {
                 return '.sprite-' + item.name;
             }
-        }
+        },
+        cssOutput: 'resources/assets/sass/front-page/vendor',
+        imgOutput: 'public/img',
+        imgPath  : '../../img/sprite.png'
     });
 });
 
