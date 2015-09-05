@@ -44,12 +44,12 @@ elixir(function (mix) {
     // front page
     mix.rubySass([
         "front-page/main.scss"
-    ],"public/css/front/main.css", {container: 'front'})
+    ],"public/css/front/main.css")
 
     // back page
     .rubySass([
         "back-page/main.scss"
-        ],"public/css/back/main.css", {container: 'back'});
+        ],"public/css/back/main.css";
 });
 
 /* [COMPILE] js files */
