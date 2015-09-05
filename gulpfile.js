@@ -41,28 +41,28 @@ elixir(function(mix) {
 
 /* [COMPILE] sass files */
 elixir(function (mix) {
-    // front page
+    // landing
     mix.rubySass([
         "landing/main.scss"
-    ],"public/css/front/main.css")
+    ],"public/css/landing/main.css")
 
-    // back page
+    // dashboard
     .rubySass([
         "dashboard/main.scss"
-        ],"public/css/back/main.css";
+    ],"public/css/dashboard/main.css");
 });
 
 /* [COMPILE] js files */
 elixir(function (mix) {
-    // front page
+    // landing
     mix.scripts([
         "landing/main.js"
-    ], "public/js/front/main.js")
+    ], "public/js/landing/main.js")
 
-    // back page
+    // dashboard
     .scripts([
         "dashboard/main.js"
-    ], "public/js/back/main.js");
+    ], "public/js/dashboard/main.js");
 });
 
 /* [RELOAD] livereload */
