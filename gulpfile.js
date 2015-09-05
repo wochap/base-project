@@ -25,7 +25,7 @@ elixir(function (mix) {
                 return '.sprite-' + item.name;
             }
         },
-        cssOutput: 'resources/assets/sass/front-page/vendor',
+        cssOutput: 'resources/assets/sass/landing/vendor',
         imgOutput: 'public/img',
         imgPath  : '../../img/sprite.png'
     });
@@ -43,12 +43,12 @@ elixir(function(mix) {
 elixir(function (mix) {
     // front page
     mix.rubySass([
-        "front-page/main.scss"
+        "landing/main.scss"
     ],"public/css/front/main.css")
 
     // back page
     .rubySass([
-        "back-page/main.scss"
+        "dashboard/main.scss"
         ],"public/css/back/main.css";
 });
 
@@ -56,12 +56,12 @@ elixir(function (mix) {
 elixir(function (mix) {
     // front page
     mix.scripts([
-        "front-page/main.js"
+        "landing/main.js"
     ], "public/js/front/main.js")
 
     // back page
     .scripts([
-        "back-page/main.js"
+        "dashboard/main.js"
     ], "public/js/back/main.js");
 });
 
