@@ -44,12 +44,12 @@ elixir(function (mix) {
     // landing
     mix.rubySass([
         "landing/main.scss"
-    ],"public/css/landing/main.css")
+    ],"public/landing/css/main.css")
 
     // dashboard
     .rubySass([
         "dashboard/main.scss"
-    ],"public/css/dashboard/main.css");
+    ],"public/dashboard/css/main.css");
 });
 
 /* [COMPILE] js files */
@@ -57,12 +57,12 @@ elixir(function (mix) {
     // landing
     mix.scripts([
         "landing/main.js"
-    ], "public/js/landing/main.js")
+    ], "public/landing/js/main.js")
 
     // dashboard
     .scripts([
         "dashboard/main.js"
-    ], "public/js/dashboard/main.js");
+    ], "public/dashboard/js/main.js");
 });
 
 /* [RELOAD] livereload */
