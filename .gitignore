@@ -8,7 +8,7 @@ Homestead.json
 *.db
 npm-debug.log
 
-/public/css
-/public/img
-/public/js
+/public/dashboard
 /public/fonts
+/public/img
+/public/landing
