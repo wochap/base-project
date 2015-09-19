@@ -70,5 +70,5 @@ elixir(function (mix) {
     mix.livereload([ 'app/**/*', 'public/**/*', 'resources/views/**/*' ]);
 
     // ELixir laravel 4
-    // mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*', 'app/views/**/*' ]);
+    // mix.livereload([ 'app/controllers/**/*', 'app/views/**/*', 'app/routes.php', 'public/**/*' ]);
 });
