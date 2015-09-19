@@ -67,5 +67,8 @@ elixir(function (mix) {
 
 /* [RELOAD] livereload */
 elixir(function (mix) {
-    mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*', 'resources/**/*' ]);
+    mix.livereload([ 'app/**/*', 'public/**/*', 'resources/views/**/*' ]);
+
+    // ELixir laravel 4
+    // mix.livereload([ 'app/**/*', 'public/**/*', 'assets/**/*', 'app/views/**/*' ]);
 });
