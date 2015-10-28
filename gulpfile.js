@@ -72,3 +72,15 @@ elixir(function (mix) {
     // ELixir laravel 4
     // mix.livereload([ 'app/controllers/**/*', 'app/views/**/*', 'app/routes.php', 'public/**/*' ]);
 });
+
+/* [RELOAD] browserSync */
+// elixir(function (mix) {
+//     mix.browserSync({
+//         files: [ 'app/**/*', 'public/**/*', 'resources/views/**/*' ]
+//     }); 
+    
+    // ELixir laravel 4
+    // mix.browserSync({
+    //     files: [ 'app/controllers/**/*', 'app/views/**/*', 'app/routes.php', 'public/**/*' ]
+    // });
+// });
