@@ -3,7 +3,7 @@ require('laravel-elixir-spritesmith');
 require('laravel-elixir-livereload');
 
 // ELixir laravel 4
-// elixir.config.assetsDir = 'assets/';
+// elixir.config.assetsPath = 'assets/';
 
 /*
  |--------------------------------------------------------------------------
