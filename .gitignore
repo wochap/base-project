@@ -8,6 +8,9 @@ Homestead.json
 *.db
 npm-debug.log
 
+bootstrap/compiled.php
+composer.lock
+
 /public/dashboard
 /public/fonts
 /public/img
