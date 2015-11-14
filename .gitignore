@@ -11,6 +11,7 @@ npm-debug.log
 bootstrap/compiled.php
 composer.lock
 
+/public/fonts/icon-font/icomoon
 /public/dashboard
 /public/fonts
 /public/img
