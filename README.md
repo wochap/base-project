@@ -1,10 +1,6 @@
 # Project Boilerplate
 
-Usa elixir en laravel 4.
-
-El boilerplate trae consigo los siguientes paquetes:
-
-- [Laravel Elixir](http://laravel.com/docs/elixir)
+Usa [Laravel Elixir](http://laravel.com/docs/elixir) en laravel 4.
 
 ## Instalación
 
