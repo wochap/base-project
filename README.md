@@ -1,12 +1,10 @@
 # Project Boilerplate
 
-Esto es un boilerplate diseñado para empezar a  desarrollar rapidamente cualquier proyecto Front end.
+Usa elixir en laravel 4.
 
 El boilerplate trae consigo los siguientes paquetes:
 
 - [Laravel Elixir](http://laravel.com/docs/elixir)
-- [Elixir Livereload](https://github.com/ehlovader/laravel-elixir-livereload)
-- [Elixir Spritesmith](https://github.com/devfake/laravel-elixir-spritesmith)
 
 ## Instalación
 

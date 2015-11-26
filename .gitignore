@@ -16,3 +16,4 @@ composer.lock
 /public/fonts
 /public/img
 /public/landing
+/public/*.html
