@@ -5,8 +5,8 @@
 <head>
 	<!--
 
-		Description: boilerplate for laravel 4 projects
-		Version: v.0.9.0
+		Description: `Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
+		Version: v.0.9.1
 		Author: Gean Bonifacio
 
     //-->
@@ -28,7 +28,7 @@
     {{-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching --}}
     <link rel="prefetch" href="{{ URL::route('home') }}"/>
 
-	<title>Project boilerplate</title>
+	<title>Project framework</title>
 	<meta name="description" content=""/>
 
 	<!-- Mobile Metas -->
