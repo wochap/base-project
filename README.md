@@ -1,5 +1,5 @@
 ## Project boilerplate
->v.0.9.1
+>v0.9.1
 
 `Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
 
