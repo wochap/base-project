@@ -33,7 +33,7 @@ elixir(function(mix) {
 /* [COMPILE] sass files */
 elixir(function (mix) {
 	/* landing */
-	mix.rubySass([
+	mix.sass([
 		"landing/main.sass"
 	], "public/landing/css/main.css");
 });
