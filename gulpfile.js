@@ -9,9 +9,9 @@ require('laravel-elixir-styledown');
 require('elixir-jade');
 
 // Elixir config Bower directory
-// elixir.config.bowerDir   = "vendor/bower_components",
+// elixir.config.bowerDir   = 'vendor/bower_components',
 // ELixir config Laravel 4 or no Laravel project
-// elixir.config.assetsPath = "assets/";
+// elixir.config.assetsPath = 'assets/';
 // Elixir config autoprefix
 // elixir.config.css.autoprefix.options.browsers = ['last 2 versions', '> 1%', 'IE 10'];
 
