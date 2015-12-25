@@ -70,8 +70,9 @@ elixir(function (mix) {
 // 		search: '**/*.jade',
 // 		src: 'views/',
 // 		extension: '.html',
-// 		basedir: path + 'views/'
-//     });
+// 		basedir: path + 'views/',  // option not available
+// 		watch: path + 'views/**/*.jade'  // option not available
+// 	});
 // });
 
 /* [COMPILE] sass files */

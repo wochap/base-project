@@ -17,3 +17,6 @@ composer.lock
 /public/img
 /public/landing
 /public/*.html
+
+/public/views/**/*.html
+/public/docs/**/*.html
