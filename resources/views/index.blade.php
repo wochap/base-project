@@ -41,7 +41,7 @@
         {{-- Place favicon.ico and apple-touch-icon(s) in the root directory --}}
         {{-- http://mathiasbynens.be/notes/rel-shortcut-icon --}}
         {{-- http://mathiasbynens.be/notes/touch-icons --}}
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
         <link rel="icon" type="image/ico" href="favicon.ico" sizes="32x32"/>
         <link rel="icon" type="image/png" href="favicon.png" sizes="32x32"/>
 
