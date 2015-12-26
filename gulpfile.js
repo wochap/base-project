@@ -1,5 +1,3 @@
-'use strict'
-
 var path = 'resources/' // let empty if Laravel 4 or no Laravel project
 var elixir = require('laravel-elixir')
 // var postStylus = require('poststylus')
