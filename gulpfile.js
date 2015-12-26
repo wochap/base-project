@@ -2,16 +2,16 @@ var path = 'resources/' // let empty if Laravel 4 or no Laravel project
 var elixir = require('laravel-elixir')
 // var postStylus = require('poststylus')
 // require('laravel-elixir-spritesmith')
-require('laravel-elixir-styledown')
+// require('elixir-jade')
+// require('laravel-elixir-styledown')
 // require('laravel-elixir-stylus')
-require('elixir-jade')
 
 // Elixir config Bower directory
 // elixir.config.bowerDir = 'vendor/bower_components'
 // ELixir config Laravel 4 or no Laravel project
 // elixir.config.assetsPath = 'assets/'
-// Elixir config autoprefix
-// elixir.config.css.autoprefix.options.browsers = ['last 2 versions', '> 1%', 'IE 10']
+// Elixir config Autoprefix
+// elixir.config.css.autoprefix.options.browsers = ['last 2 versions', '> 1%', 'IE 9']
 
 /*
  |--------------------------------------------------------------------------
@@ -23,6 +23,18 @@ require('elixir-jade')
  | file for our application, as well as publishing vendor resources.
  |
  */
+
+/* [COPY] images and fonts to public folder */
+elixir(function (mix) {
+  /* images */
+  mix.copy(path + 'assets/img/images', 'public/img')
+
+  /* fonts */
+  .copy(path + 'assets/fonts', 'public/fonts')
+
+  /* boilerplate scripts */
+  .copy(path + 'assets/js/boilerplate', 'public/landing/js')
+})
 
 /* [GENERATE] sprites */
 // elixir(function (mix) {
@@ -36,23 +48,6 @@ require('elixir-jade')
 //     imgPath: '../../img/sprite.png'
 //   })
 // })
-
-/* [GENERATE] styledown */
-elixir(function (mix) {
-  mix.styledown('components/*.md', 'public/docs/styledown.html')
-})
-
-/* [COPY] images and fonts to public folder */
-elixir(function (mix) {
-  /* images */
-  mix.copy(path + 'assets/img/images', 'public/img')
-
-  /* fonts */
-  .copy(path + 'assets/fonts', 'public/fonts')
-
-  /* boilerplate scripts */
-  .copy(path + 'assets/js/boilerplate', 'public/landing/js')
-})
 
 /* [COMPILE] jade files */
 // elixir(function (mix) {
@@ -68,11 +63,16 @@ elixir(function (mix) {
 //   })
 // })
 
+/* [COMPILE] styledown */
+// elixir(function (mix) {
+//   mix.styledown('components/*.md', 'public/docs/styledown.html')
+// })
+
 /* [COMPILE] sass files */
 elixir(function (mix) {
   /* landing */
   mix.sass([
-    'landing/main.sass'
+    'landing/main.scss'
   ], 'public/landing/css/main.css')
 })
 
@@ -92,11 +92,6 @@ elixir(function (mix) {
   mix.scripts([
     'landing/main.js'
   ], 'public/landing/js/main.js')
-
-  /* dashboard */
-  // .scripts([
-  //   'dashboard/main.js'
-  // ], 'public/dashboard/js/main.js')
 })
 
 /* [RELOAD] browserSync */
