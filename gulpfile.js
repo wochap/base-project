@@ -1,7 +1,7 @@
 var path = 'resources/' // let empty if Laravel 4 or no Laravel project
 var elixir = require('laravel-elixir')
 // var postStylus = require('poststylus')
-require('laravel-elixir-spritesmith')
+// require('laravel-elixir-spritesmith')
 require('laravel-elixir-styledown')
 // require('laravel-elixir-stylus')
 require('elixir-jade')
@@ -25,26 +25,21 @@ require('elixir-jade')
  */
 
 /* [GENERATE] sprites */
-elixir(function (mix) {
-  mix.spritesmith(null, {
-    cssName: '_sprite.scss',
-    cssOpts: {
-      cssSelector: function (item) { return '.sprite-' + item.name }
-    },
-    cssOutput: path + 'assets/sass/landing/vendor',
-    imgOutput: 'public/img',
-    imgPath: '../../img/sprite.png'
-  })
-})
+// elixir(function (mix) {
+//   mix.spritesmith(null, {
+//     cssName: '_sprite.scss',
+//     cssOpts: {
+//       cssSelector: function (item) { return '.sprite-' + item.name }
+//     },
+//     cssOutput: path + 'assets/sass/landing/vendor',
+//     imgOutput: 'public/img',
+//     imgPath: '../../img/sprite.png'
+//   })
+// })
 
 /* [GENERATE] styledown */
 elixir(function (mix) {
-  mix.styledown({
-    src: path + 'assets/styledown/components/*.md',
-    config: path + 'assets/styledown/config.md', // Path to config.md
-    filename: 'styledown.html', // Path to output html
-    dest: 'public/docs'
-  })
+  mix.styledown('components/*.md', 'public/docs/styledown.html')
 })
 
 /* [COPY] images and fonts to public folder */
