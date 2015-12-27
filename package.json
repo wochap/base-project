@@ -1,12 +1,12 @@
 {
-	"private": true,
-	"devDependencies": {
-		"elixir-jade": "^1.0.2",
-		"gulp": "^3.9.0",
-		"laravel-elixir": "^4.0.0",
-		"laravel-elixir-spritesmith": "^0.2.1",
-		"laravel-elixir-styledown": "1.0.0",
-		"laravel-elixir-stylus": "^1.0.1",
-		"poststylus": "^0.2.2"
-	}
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "laravel-elixir": "^4.0.0",
+    "laravel-elixir-spritesmith": "^0.2.1",
+    "laravel-elixir-styledown": "1.0.0",
+    "laravel-elixir-stylus": "^1.0.1",
+    "poststylus": "^0.2.2",
+    "wo-laravel-elixir-jade": "0.0.1"
+  }
 }

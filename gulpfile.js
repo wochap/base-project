@@ -2,7 +2,7 @@ var path = 'resources/' // let empty if Laravel 4 or no Laravel project
 var elixir = require('laravel-elixir')
 // var postStylus = require('poststylus')
 // require('laravel-elixir-spritesmith')
-// require('elixir-jade')
+// require('wo-laravel-elixir-jade')
 // require('laravel-elixir-styledown')
 // require('laravel-elixir-stylus')
 
@@ -51,15 +51,10 @@ elixir(function (mix) {
 
 /* [COMPILE] jade files */
 // elixir(function (mix) {
-//   mix.jade({
-//     baseDir: path,
-//     dest: 'public/views',
+//   mix.jade('**/*.jade', 'public', {
+//     basedir: path + 'views',
 //     pretty: true, // no minifi
-//     search: '**/*.jade',
-//     src: 'views/',
-//     extension: '.html',
-//     basedir: path + 'views/',  // option not available
-//     watch: path + 'views/**/*.jade'  // option not available
+//     extension: '.html'
 //   })
 // })
 
