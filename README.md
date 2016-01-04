@@ -1,7 +1,7 @@
 ## Project boilerplate
 >v0.9.4
 
-`Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
+`Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustas y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
 
 ### Paquetes:
 
