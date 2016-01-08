@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <!--
             Description: `Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
