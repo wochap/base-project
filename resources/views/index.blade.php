@@ -68,7 +68,7 @@
         {{-- scripts --}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="landing/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
-        <script type="text/javascript">$.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });</script>
+        <script>$.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });</script>
         <script src="{{ asset('landing/js/plugins.js') }}"></script>
         <script src="{{ asset('landing/js/main.js') }}"></script>
         {{-- /scripts --}}
