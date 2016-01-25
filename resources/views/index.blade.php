@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <!--
             Description: `Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
@@ -68,6 +68,7 @@
         {{-- scripts --}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="landing/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+        <script>$.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });</script>
         <script src="{{ asset('landing/js/plugins.js') }}"></script>
         <script src="{{ asset('landing/js/main.js') }}"></script>
         {{-- /scripts --}}

@@ -1,7 +1,7 @@
 ## Project boilerplate
 >v0.9.4
 
-`Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustos y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
+`Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustas y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
 
 ### Paquetes:
 
@@ -9,6 +9,7 @@
 - [Elixir Spritesmith](https://github.com/devfake/laravel-elixir-spritesmith)
 - [Elixir Styledown](https://github.com/wochap/laravel-elixir-styledown)
 - [Elixir Stylus](https://github.com/JeffreyWay/laravel-elixir-stylus)
+- [Elixir Jade](https://github.com/wochap/laravel-elixir-jade)
 - [Post Stylus](https://github.com/seaneking/poststylus)
 
 ### Instalación
@@ -30,7 +31,7 @@ $ npm install --global gulp
 ```
 #### Instalar dependencias
 
-Ahora solo queda instalar Elixir, el archivo `package.json` define las dependencias del proyecto en Node.js, asi como composer las de PHP. Puedes instalar las dependencias que hace referencia el archivo `package.json` ejecutando:
+Ahora solo queda instalar Elixir, el archivo `package.json` define las dependencias del proyecto en Node.js, asi como composer las de PHP. Puedes instalar las dependencias que hacen referencia al archivo `package.json` ejecutando:
 
 ```sh
 $ npm install
@@ -38,7 +39,7 @@ $ npm install
 
 ### Uso
 
-Todos tus archivos van dentro de la carpeta `resources`, la salida de todos los archivos compilados es la carpeta `public`.
+Todos tus `assets` van dentro de la carpeta `resources`, la salida de todos los archivos compilados es la carpeta `public`.
 
 #### Compilar con cambios (desarrollo)
 
