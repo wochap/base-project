@@ -60,7 +60,7 @@
         <![endif]-->
 
         {{-- content --}}
-        <div class="x-main">
+        <div id="root">
             <h1>Hi</h1>
         </div>
         {{-- /content --}}
