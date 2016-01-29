@@ -10,24 +10,24 @@
         <meta charset="utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
 
-        <!-- #DNS prefetching -->
+        {{-- #DNS prefetching --}}
         {{-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers --}}
         <link rel="dns-prefetch" href="//ajax.googleapis.com"/>
         <link rel="dns-prefetch" href="//google-analytics.com"/>
 
-        <!-- #Asset Prefetching -->
+        {{-- #Asset Prefetching --}}
         {{-- Fetch and Download Assets before requested by the user  --}}
         {{-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching --}}
         <link rel="prefetch" href=""/>
 
-        <!-- #Page Prefetching -->
+        {{-- #Page Prefetching --}}
         {{-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching --}}
         <link rel="prefetch" href="{{ URL::route('home') }}"/>
 
-        <title>Project framework</title>
-        <meta name="description" content=""/>
+        <title>@yield('title', 'Project boilerplate')</title>
+        <meta name="description" content="@yield('description', '')"/>
 
-        <!-- Mobile Metas -->
+        {{-- Mobile Metas --}}
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
 
@@ -46,13 +46,13 @@
         {{-- <link rel="icon" type="image/png" href="favicon.png" sizes="32x32"/> --}}
 
         <link rel="stylesheet" href="{{ asset('landing/css/main.css') }}"/>
-        <script src="{{ asset('landing/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+        <script src="{{ asset('landing/js/boilerplate/modernizr-2.8.3.min.js') }}"></script>
         <!--[if lt IE 9]>
-            <script src="{{ asset('landing/js/vendor/lt-ie-9.min.js') }}"></script>
-            <script src="{{ asset('landing/js/vendor/calc.min.js') }}"></script>
+            <script src="{{ asset('landing/js/boilerplate/lt-ie-9.min.js') }}"></script>
+            <script src="{{ asset('landing/js/boilerplate/calc.min.js') }}"></script>
         <![endif]-->
     </head>
-    <body class="@yield('scope', 's-home')">
+    <body class="@yield('scope', '')">
         <!--[if lt IE 8]>
             <div class="browsehappy">
                 <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
@@ -67,10 +67,9 @@
 
         {{-- scripts --}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="landing/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="landing/js/boilerplate/jquery-2.1.4.min.js"><\/script>')</script>
         <script>$.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });</script>
-        <script src="{{ asset('landing/js/plugins.js') }}"></script>
-        <script src="{{ asset('landing/js/main.js') }}"></script>
+        @yield('scripts')
         {{-- /scripts --}}
 
         {{-- Google Analytics --}}
