@@ -6,6 +6,8 @@ var elixir = require('laravel-elixir')
 // require('laravel-elixir-styledown')
 // require('laravel-elixir-stylus')
 
+// Elixir config Sourcemaps
+// elixir.config.sourcemaps = false
 // Elixir config Bower directory
 // elixir.config.bowerDir = 'vendor/bower_components'
 // ELixir config Laravel 4
@@ -93,14 +95,14 @@ elixir(function (mix) {
 elixir(function (mix) {
   /* Elixir laravel 5 */
   mix.browserSync({
-    files: [ 'app/**/*', 'public/**/*', 'resources/views/**/*' ],
+    files: [ 'app/**/*', 'public/**/*', 'resources/views/**/*', '!public/**.map' ],
     online: false // localtunel
   })
 
   /* Elixir laravel 4 */
   // mix.browserSync({
-  //   files: [ 'app/controllers/**/*', 'app/views/**/*', 'app/routes.php', 'public/**/*' ],
-  //   online: false
+  //   files: [ 'app/controllers/**/*', 'app/views/**/*', 'app/routes.php', 'public/**/*', '!public/**.map' ],
+  //   online: false // localtunel
   // })
 
   /* Elixir no laravel project */
@@ -110,7 +112,7 @@ elixir(function (mix) {
   //     directory: true,
   //     index: 'index.html' // doesn't work
   //   },
-  //   files: [ 'public/**/*' ],
+  //   files: [ 'public/**/*', '!public/**.map' ],
   //   online: false, // localtunel
   //   proxy: false
   // })
