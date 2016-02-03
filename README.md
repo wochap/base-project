@@ -1,9 +1,13 @@
-## Project boilerplate
->v0.9.4
+## Base Project
+>v1.0.0
 
-`Project boilerplate` es una plantilla front-end para la creación de aplicaciones o paginas web rapidas, robustas y adaptables. Pasa más tiempo desarrollando y menos tiempo reinventando la rueda.
+Una base para cualquier proyecto `frontend`.
 
-### Paquetes:
+### Elixir:
+
+Este `project` usa [Laravel Elixir](https://laravel.com/docs/5.2/elixir) para `serve`, `build` y `watch` todos tus `assets`.
+
+#### Paquetes
 
 - [Elixir](http://laravel.com/docs/elixir)
 - [Elixir Spritesmith](https://github.com/devfake/laravel-elixir-spritesmith)
@@ -49,7 +53,7 @@ Para ejecutar las tareas con cada cambio, escribe:
   $ gulp watch
 ```
 
-#### Compilar y minificar* (producción)
+#### Compilar y minificar (producción)
 
 Ejecutar todas las tareas y minificar todos los archivos CSS y Javascript:
 
@@ -60,3 +64,13 @@ Ejecutar todas las tareas y minificar todos los archivos CSS y Javascript:
 ### Configuración
 
 El proyecto viene pre-configurado para usarlo con `Laravel 5.*`, si deseas trabajar con `Laravel 4` usa la rama `laravel 4`.
+
+## Changelog
+
+### 1.0.0
+
+* Rename `Project Boilerplate` to `Base Project`
+* Update jquery version
+* Fix BrowserSync doesn't inject CSS
+* Update tabs 4 to 2 spaces
+* Update packages version

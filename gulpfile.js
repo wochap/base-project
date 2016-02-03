@@ -34,8 +34,8 @@ elixir(function (mix) {
   /* fonts */
   .copy(path + 'assets/fonts', 'public/fonts')
 
-  /* boilerplate scripts */
-  .copy(path + 'assets/js/boilerplate', 'public/landing/js/boilerplate')
+  /* base scripts */
+  .copy(path + 'assets/js/base', 'public/base/js')
 })
 
 /* [GENERATE] sprites */
